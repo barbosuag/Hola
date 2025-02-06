@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Juego Online</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <meta name="description" content="Juego multijugador en línea accesible desde cualquier navegador.">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            overflow: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Juego</h1>
+    <p>Cargando...</p>
+
+    <script>
+        // Simulación de carga sin referencias a servidores externos
+        setTimeout(() => {
+            document.querySelector("p").innerText = "Juego listo para jugar.";
+        }, 2000);
+    </script>
+</body>
+</html>
